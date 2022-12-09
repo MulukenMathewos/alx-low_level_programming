@@ -13,10 +13,8 @@ int main(void)
 		putchar(c);
 		c++;
 	}
-  
-  char c = 'A';
-  
-  while (c <= 'Z')
+	c = 'A';
+	while (c <= 'Z')
 	{
 		putchar(c);
 		c++;

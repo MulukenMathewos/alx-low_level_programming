@@ -8,6 +8,12 @@
 int print_last_digit(int n)
 {
 	int lastDigit = n % 10;
+
+	_putchar(lastDigit);
+	return (0);
+}
+int main(void)
+{
 	int r;
 
 	print_last_digit(98);
@@ -15,7 +21,5 @@ int print_last_digit(int n)
 	r = print_last_digit(-1024);
 	_putchar('0' + r);
 	_putchar('\n');
-	_putchar(lastDigit);
-
 	return (0);
 }

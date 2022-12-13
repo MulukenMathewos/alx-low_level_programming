@@ -2,22 +2,20 @@
 
 /**
  * main - prints the first 50 Fibonacci numbers, starting with 1 and 2
+ * Return: the first 50 Fibonacci numbers
  */
-int main() {
-  int i;
+int main(void)
+{
+	int i;
+	int t1 = 0, t2 = 1;
+	int nextTerm = t1 + t2;
 
-  // initialize first and second terms
-  int t1 = 0, t2 = 1;
-
-  // initialize the next term (3rd term)
-  int nextTerm = t1 + t2;
-
-  // print 3rd to nth terms
-  for (i = 3; i <= 50; ++i) {
-    printf("%d, ", nextTerm);
-    t1 = t2;
-    t2 = nextTerm;
-    nextTerm = t1 + t2;
-  }
-  return 0;
+	for (i = 3; i <= 50; ++i)
+	{
+		printf("%d, ", nextTerm);
+		t1 = t2;
+		t2 = nextTerm;
+		nextTerm = t1 + t2;
+	}
+	return (0);
 }

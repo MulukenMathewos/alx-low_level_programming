@@ -5,12 +5,12 @@
  */
 void times_table(void)
 {
-	int num, malt, prod;
+	int num, mult, prod;
 
 	for (num = 0; num <= 9; num++)
 	{
 		_putchar('0');
-		for (malt = 1; malt <= 9; malt++)
+		for (mult = 1; mult <= 9; mult++)
 		{
 			_putchar(',');
 			_putchar(' ');

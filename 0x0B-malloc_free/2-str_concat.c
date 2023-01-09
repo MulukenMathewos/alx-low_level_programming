@@ -27,7 +27,7 @@ int _strlen(char *s)
 
 char *str_concat(char *s1, char *s2)
 {
-	char *mom;
+	char *dst;
 	unsigned int i, j, size;
 
 	/*If the array is empty*/
@@ -41,22 +41,22 @@ char *str_concat(char *s1, char *s2)
 	size = (_strlen(s1) + _strlen(s2) + 1);
 
 	/*malloc*/
-	mom = (char *) malloc(size * sizeof(char));
+	dst = (char *) malloc(size * sizeof(char));
 
-	if (mom == 0)
+	if (dst == 0)
 	{
 		return (NULL);
 	}
 
 	/*Concatenate arrays*/
 	for (i = 0; *(s1 + i) != '\0'; i++)
-		*(mom + i) = *(s1 + i);
+		*(dst + i) = *(s1 + i);
 
 	for (j = 0; *(s2 + j) != '\0'; j++)
 	{
-		*(mom + i) = *(s2 + j);
+		*(dst + i) = *(s2 + j);
 		i++;
 	}
 
-	return (mom);
+	return (dst);
 }
